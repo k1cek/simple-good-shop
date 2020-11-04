@@ -8,14 +8,13 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Tab from 'react-bootstrap/Tab';
-import Form from 'react-bootstrap/Form';
-import Footer from 'react-bootstrap/ModalFooter';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { LinkContainer } from 'react-router-bootstrap';
 import './App.scss';
 import HelloPagi from './components/Pagination/Pagination';
 import NewCard from './components/Cards/Cards';
+import MyFooter from './components/Footer/Footer';
 
 const App = () => (
   <>
@@ -125,26 +124,7 @@ const App = () => (
   </Row>
 </Tab.Container>
 </Container>
-<Footer className="bg-secondary text-white px-5">
-  <Row>
-    <Col className="pl-5" md={8}>
-      <h3>Gooood Shop</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, voluptate saepe dignissimos nulla, ab dolore eius at expedita, minima commodi ducimus laudantium! Soluta sed veritatis nobis error ipsa magni vero.
-      Laborum in natus delectus</p>
-      </Col>
-    <Col md={4}>
-      <Form>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Subscribe!!!</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text>
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-      </Form>
-    </Col>
-  </Row>
-</Footer>
+<MyFooter/>
   </>
   
 );
